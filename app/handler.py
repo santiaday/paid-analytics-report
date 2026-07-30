@@ -195,9 +195,45 @@ def run_optional_pulls(anchor: str, sk: str) -> None:
         print("no META_ACCESS_TOKEN / META_AD_ACCOUNT_ID env — Meta spend tail stays stale")
 
 
+def write_campfunnel(anchor: str) -> Optional[str]:
+    """Synthesize the SF campfunnel file that the All-Sources scorecard reads, FROM the Brain funnel.
+
+    The report's All-Sources funnel normally comes from Salesforce (sf_campfunnel.js — a Node script we
+    don't run). The Brain's gtm-paid-media-daily-funnel carries the identical fields per day+campaign
+    (MQLS/DEMOS_SCHEDULED/DEMOS_COMPLETED/OPPS/ACCOUNTS/NEW_ARR, SOURCE ∈ google-ads/bing/meta), so we
+    aggregate those into the raw shape update_history's --campfunnel expects. This keeps the scorecard
+    current instead of frozen at the seed's last SF date.
+    """
+    fp = os.path.join(OUT, "funnel.json")
+    if not os.path.exists(fp):
+        return None
+    rows = json.load(open(fp)).get("rows") or []
+    SRC_OK = {"google-ads", "bing", "meta"}
+    agg: Dict[tuple, List[float]] = {}
+    for r in rows:
+        src = r.get("SOURCE")
+        if src not in SRC_OK:
+            continue
+        key = (r.get("DT"), src, r.get("CAMPAIGN") or "")
+        v = agg.setdefault(key, [0, 0, 0, 0, 0, 0.0])
+        v[0] += int(r.get("MQLS") or 0);            v[1] += int(r.get("DEMOS_SCHEDULED") or 0)
+        v[2] += int(r.get("DEMOS_COMPLETED") or 0); v[3] += int(r.get("OPPS") or 0)
+        v[4] += int(r.get("ACCOUNTS") or 0);        v[5] += float(r.get("NEW_ARR") or 0)
+    out = [{"DT": dt, "SOURCE": src, "UTM_CAMPAIGN": camp, "MQLS": v[0], "DEMOS": v[1],
+            "COMPLETED": v[2], "OPPS": v[3], "ACCTS": v[4], "ARR": v[5]}
+           for (dt, src, camp), v in agg.items()]
+    path = os.path.join(OUT, f"sf_campfunnel_{window_start(anchor).replace('-', '')}_{anchor.replace('-', '')}.json")
+    with open(path, "w") as f:
+        json.dump(out, f)
+    return path
+
+
 def run_pipeline(anchor: str) -> str:
     """update_history → stores → build.py. Returns the rendered HTML path."""
+    campfunnel = write_campfunnel(anchor)  # feed the Brain funnel to the All-Sources scorecard
     args = [PY, os.path.join(PIPELINE_DIR, "update_history.py"), anchor]
+    if campfunnel:
+        args += ["--campfunnel", campfunnel]
     for flag, fname in (
         ("--brain-cohort", "cohort.json"), ("--brain-funnel", "funnel.json"), ("--kw-funnel", "keyword_funnel.json"),
     ):

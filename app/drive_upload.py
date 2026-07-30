@@ -104,4 +104,17 @@ def upload(html_path: str, folder_id: Optional[str] = None, name: Optional[str] 
         raise RuntimeError(f"drive upload {put.status_code}: {put.text[:300]}")
     file_id = put.json().get("id", existing)
     print(f"[drive] {'updated' if existing else 'created'} {name} ({len(content)} bytes) → file {file_id}", flush=True)
+    # De-dupe: with drive.file, a fast create-then-update (or a stale list) can leave duplicates.
+    # Trash every other file of the same name in this folder, keeping the one we just wrote.
+    try:
+        q = f"name = '{name}' and '{folder_id}' in parents and trashed = false"
+        r = requests.get(f"{DRIVE_V3}/files", params={"q": q, "fields": "files(id)", "supportsAllDrives": "true",
+                         "includeItemsFromAllDrives": "true"}, headers={"authorization": f"Bearer {token}"}, timeout=30)
+        for f in r.json().get("files", []):
+            if f["id"] != file_id:
+                requests.delete(f"{DRIVE_V3}/files/{f['id']}", params={"supportsAllDrives": "true"},
+                                headers={"authorization": f"Bearer {token}"}, timeout=30)
+                print(f"[drive] removed duplicate {name} ({f['id']})", flush=True)
+    except Exception as e:  # noqa: BLE001
+        print(f"[drive] dedupe skipped: {e}", flush=True)
     return file_id
