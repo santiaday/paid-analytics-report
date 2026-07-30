@@ -187,17 +187,37 @@ def build_once(anchor: str | None = None) -> None:
             STATE["building"] = False
 
 
+def _build_times() -> list:
+    """(hour, minute) slots from BUILD_TIMES_ET ("HH:MM,HH:MM,…"), America/New_York. Default 4×/day
+    (07:40, 13:40, 19:40, 01:40 ET — a fresh report every ~6h)."""
+    raw = os.environ.get("BUILD_TIMES_ET", "07:40,13:40,19:40,01:40")
+    slots = []
+    for tok in raw.split(","):
+        tok = tok.strip()
+        if not tok:
+            continue
+        try:
+            h, m = tok.split(":")
+            slots.append((int(h) % 24, int(m) % 60))
+        except ValueError:
+            pass
+    return sorted(set(slots)) or [(7, 40)]
+
+
 def _seconds_until_next_run() -> float:
-    """Seconds until the next ~07:40 America/New_York (the report's daily cadence)."""
+    """Seconds until the next scheduled build slot (America/New_York), across all BUILD_TIMES_ET times."""
+    slots = _build_times()
     try:
         from zoneinfo import ZoneInfo
         now = datetime.now(ZoneInfo("America/New_York"))
-        nxt = now.replace(hour=7, minute=40, second=0, microsecond=0)
     except Exception:
-        now = datetime.utcnow()
-        nxt = now.replace(hour=12, minute=40, second=0, microsecond=0)  # ~07:40 ET in UTC (no DST)
-    if nxt <= now:
-        nxt += timedelta(days=1)
+        now = datetime.utcnow() - timedelta(hours=5)  # ET fallback (no DST) if tzdata missing
+    cands = []
+    for day_off in (0, 1):
+        base = (now + timedelta(days=day_off)).replace(second=0, microsecond=0)
+        for h, m in slots:
+            cands.append(base.replace(hour=h, minute=m))
+    nxt = min(c for c in cands if c > now)
     return max(60.0, (nxt - now).total_seconds())
 
 
@@ -255,8 +275,22 @@ class Handler(http.server.BaseHTTPRequestHandler):
                 ip = f"error: {e}"
             return self._send(200, json.dumps({"egress_ip": ip}).encode(), "application/json")
         if p == "/refresh":
-            threading.Thread(target=build_once, daemon=True).start()
-            return self._send(202, json.dumps({"triggered": True, **STATE}).encode(), "application/json")
+            # Manual pull: rebuild now (pull Brain + Salesforce + Google → build → re-upload to Drive).
+            # build_once() self-guards against concurrent runs, so a double-click is harmless.
+            already = STATE["building"]
+            if not already:
+                threading.Thread(target=build_once, daemon=True).start()
+            html = (
+                "<!doctype html><meta charset=utf-8><title>Paid Analytics — manual refresh</title>"
+                "<meta http-equiv=refresh content='25;url=/healthz'>"
+                "<body style='font:16px system-ui;max-width:42rem;margin:4rem auto;padding:0 1rem;line-height:1.5'>"
+                f"<h1>{'⏳ A build is already running' if already else '✅ Manual pull triggered'}</h1>"
+                "<p>Pulling the Brain, Salesforce (all-channel funnel) and Google, rebuilding the report, "
+                "and re-uploading <code>Paid-Analytics.html</code> to Google Drive. This takes about a minute.</p>"
+                f"<p style='color:#64748b'>Last successful build: {STATE.get('last_ok') or '—'} "
+                f"(anchor {STATE.get('anchor') or '—'}). This page checks status automatically.</p>"
+                "<p><a href='/healthz'>Check status →</a></p></body>")
+            return self._send(202, html.encode(), "text/html; charset=utf-8")
         self._serve_path(p)
 
     do_HEAD = do_GET

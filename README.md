@@ -5,11 +5,15 @@ report every morning and uploads the self-contained `Paid-Analytics.html` to Goo
 business data lives in this repo** — the history is loaded at runtime from a private Drive file, and
 account IDs come from env vars. One Python container: pull → build → Drive.
 
-## Every morning (in-app schedule — no cron needed)
-1. **Restore** the history from the private Drive seed → 2. **pull** today's numbers from the Brain
-(+ Google/Meta) → 3. **build** the self-contained `Paid-Analytics.html` → 4. **upload** it to the
-shared Drive folder → 5. **save** the updated history back to the private Drive seed.
-Also serves the report on `$PORT` (`/healthz`, `/refresh`, `/whoami`) for DeployBay's health check.
+## Every ~6 hours (in-app schedule — no cron needed; 4×/day by default)
+1. **Restore** the history from the private Drive seed → 2. **pull** the numbers from the Brain (paid
+funnel + Google/Meta spend) **and Salesforce** (the all-channel funnel incl. ORGANIC — Blog,
+Direct/Organic, Consumer Reviews) → 3. **build** the self-contained `Paid-Analytics.html` →
+4. **upload** it to the shared Drive folder → 5. **save** the updated history back to the private seed.
+
+Runs at `BUILD_TIMES_ET` (default `07:40,13:40,19:40,01:40` America/New_York). Also serves the report on
+`$PORT`: **`GET /refresh`** triggers a manual pull on demand (rebuild + re-upload in ~1 min), `/healthz`
+reports status, `/whoami` shows the egress IP.
 
 ## Why it's safe to be public
 - No `history/` data, no backfill data — the repo ships an empty `history/` that is filled at runtime
@@ -54,6 +58,21 @@ updating `BRAIN_REFRESH_TOKEN` manually.
 | `GOOGLE_ADS_REFRESH_TOKEN` / `_DEVELOPER_TOKEN` / `_LOGIN_CUSTOMER_ID` | Google Ads pull |
 | `META_ACCESS_TOKEN` / `META_AD_ACCOUNT_ID` | Meta spend (`act_…`) |
 | `META_DEMO_CONVERSION_ID` | Meta custom-conversion id used for the demo filter (optional) |
+
+**Salesforce (the All-Sources all-channel funnel — organic + paid; read-only JWT Bearer):**
+| Var | Value |
+|-----|-------|
+| `SF_PROD_CLIENT_ID` | read-only Connected App consumer key |
+| `SF_PROD_USERNAME` | integration-user email (read-only permission set) |
+| `SF_PROD_LOGIN_URL` | login endpoint (default `https://login.salesforce.com`) |
+| `SF_PROD_JWT_KEY_B64` | base64 of the RSA private-key PEM (or `SF_PROD_JWT_KEY` raw PEM / `SF_PROD_JWT_KEY_PATH` file for local dev) |
+
+The Brain funnel is paid-only (google-ads/bing/meta); the report's All-Sources tab also shows ORGANIC
+channels, which live only in Salesforce (bucketed by `UTM_Source__c`). `sf_allsources.py` pulls the
+9-slice all-channel funnel via **read-only SELECTs** (JWT Bearer, same as the Revops platform) → a
+`series.json` that `update_history.py` merges. Without these vars the report still builds — only the
+All-Sources funnel tail stays stale. First-click UTM basis (intentionally different from the Brain-cohort
+per-channel tabs, which the report footnote explains).
 
 ## One-time setup
 1. **Upload the seed once.** Put `paid-analytics-history.tar.gz` (provided separately — the current
