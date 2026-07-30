@@ -48,6 +48,30 @@ STATE = {"building": False, "last_ok": None, "last_error": None, "anchor": None}
 _lock = threading.Lock()
 
 
+def _persist_token_to_deploybay(new_token: str) -> None:
+    """Write the rotated Brain refresh token back to THIS app's DeployBay env var, so it survives a
+    container restart (the running container already holds the token in memory; this keeps the env var
+    current for the next cold start). Solves refresh-token rotation without any external store — the
+    token lives only in DeployBay env vars. No-op unless the DeployBay API is configured.
+
+    Env: DEPLOYBAY_API_BASE (the platform API base URL), DEPLOYBAY_API_KEY (a dlp_… key), and
+    DEPLOYBAY_APP_NAME (this app's name). Uses the set_env_var route: POST /apps/{name}/env.
+    """
+    api = os.environ.get("DEPLOYBAY_API_BASE")
+    key = os.environ.get("DEPLOYBAY_API_KEY")
+    app = os.environ.get("DEPLOYBAY_APP_NAME")
+    if not (api and key and app):
+        return
+    try:
+        import requests
+        r = requests.post(f"{api.rstrip('/')}/apps/{app}/env",
+                          json={"key": "BRAIN_REFRESH_TOKEN", "value": new_token},
+                          headers={"authorization": f"Bearer {key}"}, timeout=30)
+        print(f"[token] persisted rotated BRAIN_REFRESH_TOKEN to DeployBay env: {r.status_code}", flush=True)
+    except Exception as e:  # noqa: BLE001
+        print(f"[token] DeployBay env update failed (in-memory token still works this run): {e}", flush=True)
+
+
 def _brain_from_env() -> BrainClient:
     for k in ("BRAIN_CLIENT_ID", "BRAIN_REFRESH_TOKEN"):
         if not os.environ.get(k):
@@ -66,6 +90,7 @@ def _brain_from_env() -> BrainClient:
             os.makedirs(os.path.dirname(writeback), exist_ok=True)
             with open(writeback, "w") as f:
                 f.write(new_refresh)
+        _persist_token_to_deploybay(new_refresh)  # keep the DeployBay env var current → survives restarts
 
     edge = os.environ.get("BRAIN_EDGE_HEADERS")
     return BrainClient(

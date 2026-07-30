@@ -25,6 +25,20 @@ Also serves the report on `$PORT` (`/healthz`, `/refresh`, `/whoami`) for Deploy
 | `BRAIN_CLIENT_ID` / `BRAIN_CLIENT_SECRET` / `BRAIN_REFRESH_TOKEN` | from `node scripts/brain-bootstrap.mjs` |
 | `BRAIN_EDGE_HEADERS` | JSON edge-token headers, if the Brain uses a service token instead of an IP allowlist |
 
+**Brain token — set once, never touch again.** The Brain refresh token rotates on each use, and a
+container restart would otherwise fall back to the stale original and get revoked. To avoid that, the
+app writes each rotated token back to its OWN DeployBay env var (via the `set_env_var` API), so a
+restart always reads the latest valid token. Set these three so it can (optional but recommended):
+
+| Var | Value |
+|-----|-------|
+| `DEPLOYBAY_API_BASE` | the DeployBay platform API base URL |
+| `DEPLOYBAY_API_KEY` | a DeployBay API key (`dlp_…`, from `create_api_key`) |
+| `DEPLOYBAY_APP_NAME` | this app's name |
+
+Without these, the token still works while the container runs, but a restart requires re-minting +
+updating `BRAIN_REFRESH_TOKEN` manually.
+
 **Google Drive (the daily output + the private history seed):**
 | Var | Value |
 |-----|-------|
