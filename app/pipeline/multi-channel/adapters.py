@@ -690,7 +690,15 @@ def meta_sections(anchor):
 # ════════════════════════════════════════════════════════════════════════════
 def allsources_sections(anchor):
     out = {"errors": []}
-    m = _mod("allsources")
+    try:
+        m = _mod("allsources")
+    except Exception:  # noqa: BLE001
+        # The all-channels-artifact SERVER-SIDE renderer isn't vendored in this deployment. That's OK:
+        # the interactive All-Sources scorecard / conversion rates / charts render CLIENT-SIDE from the
+        # history "slices" (engine.js), which sf_allsources.py keeps current via series.json. Only the
+        # anchor-day server sections (an alerts card) come from this module — skip them silently so the
+        # missing sibling never raises "ALL sections failed" into the top health banner.
+        return {"errors": []}
 
     with _cd(PATHS["allsources"]):
         shared_err = None

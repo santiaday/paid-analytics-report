@@ -1,3 +1,4 @@
-# Runtime deps for the pull Lambda (boto3 is provided by the AWS python runtime).
+# Runtime deps for the pull app (boto3, if ever used, is provided by the AWS python runtime).
 requests>=2.31
-tzdata>=2024.1   # guarantees zoneinfo has America/New_York on the Lambda base image
+tzdata>=2024.1        # guarantees zoneinfo has America/New_York on the slim base image
+PyJWT[crypto]>=2.8    # RS256 JWT signing for the read-only Salesforce all-channel pull (sf_allsources.py)

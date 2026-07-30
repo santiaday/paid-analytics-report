@@ -194,6 +194,19 @@ def run_optional_pulls(anchor: str, sk: str) -> None:
     else:
         print("no META_ACCESS_TOKEN / META_AD_ACCOUNT_ID env — Meta spend tail stays stale")
 
+    # Salesforce all-channel funnel → all-channels-artifact/data/<anchor>/series.json. The Brain funnel
+    # is paid-only (google-ads/bing/meta); the All-Sources scorecard also needs ORGANIC channels (Blog,
+    # Direct/Organic, Consumer Reviews), which live only in Salesforce (UTM_Source__c). Read-only JWT.
+    if os.environ.get("SF_PROD_CLIENT_ID") and os.environ.get("SF_PROD_USERNAME"):
+        try:
+            import sf_allsources
+            path, sanity = sf_allsources.build_series(anchor, sk)
+            print(f"pull sf-allsources (organic + paid funnel): ok → {os.path.basename(path)} | all-channels {sanity}")
+        except Exception as e:  # noqa: BLE001
+            print(f"pull sf-allsources FAILED (All-Sources funnel tail stays stale): {str(e).splitlines()[0]}")
+    else:
+        print("no SF_PROD_CLIENT_ID / SF_PROD_USERNAME env — All-Sources funnel tail stays stale (organic needs Salesforce)")
+
 
 def write_campfunnel(anchor: str) -> Optional[str]:
     """Synthesize the SF campfunnel file that the All-Sources scorecard reads, FROM the Brain funnel.
