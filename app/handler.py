@@ -153,12 +153,15 @@ def run_optional_pulls(anchor: str, sk: str) -> None:
     """
     env: Dict[str, str] = {"HOME": WORK}
 
-    # One synthetic ~/.claude.json feeds the Google Ads fetch (fetch_data.py reads
-    # mcpServers['google-ads'].env). Written only when the secret is present.
-    gads = get_secret_json(os.environ.get("GOOGLE_ADS_SECRET_ARN"))
+    # Google Ads OAuth creds come from env vars (DeployBay injects them). The fetch reads them from a
+    # synthetic ~/.claude.json (mcpServers['google-ads'].env) and reads GADS_CUSTOMER_ID from the env.
+    _gkeys = ("GOOGLE_ADS_CLIENT_ID", "GOOGLE_ADS_CLIENT_SECRET", "GOOGLE_ADS_REFRESH_TOKEN",
+              "GOOGLE_ADS_DEVELOPER_TOKEN", "GOOGLE_ADS_LOGIN_CUSTOMER_ID")
+    gads = ({k: os.environ[k] for k in _gkeys if os.environ.get(k)}
+            if os.environ.get("GOOGLE_ADS_REFRESH_TOKEN") and os.environ.get("GADS_CUSTOMER_ID") else None)
     mcp_servers: Dict[str, Any] = {}
     if gads:
-        mcp_servers["google-ads"] = {"env": gads}  # 5 keys: CLIENT_ID/SECRET/REFRESH_TOKEN/DEVELOPER_TOKEN/LOGIN_CUSTOMER_ID
+        mcp_servers["google-ads"] = {"env": gads}
     os.makedirs(WORK, exist_ok=True)
     with open(os.path.join(WORK, ".claude.json"), "w") as f:
         json.dump({"mcpServers": mcp_servers}, f)
@@ -171,11 +174,12 @@ def run_optional_pulls(anchor: str, sk: str) -> None:
         except Exception as e:  # noqa: BLE001
             print(f"pull google-ads FAILED (Google anchor sections empty, spend stays Brain): {str(e).splitlines()[0]}")
     else:
-        print("no GOOGLE_ADS_SECRET_ARN — Google spend = Brain baseline, Google anchor sections empty")
+        print("no GOOGLE_ADS_* / GADS_CUSTOMER_ID env — Google spend = Brain baseline, anchor sections empty")
 
     # Meta spend/clicks (ad-set grain) — the Meta Graph fetch. Reads ACCESS_TOKEN + AD_ACCOUNT_ID
     # from META_MCP_DIR/.env (patched at vendor time). Signature is `daily <anchor>`.
-    meta = get_secret_json(os.environ.get("META_SECRET_ARN"))
+    meta = ({"access_token": os.environ["META_ACCESS_TOKEN"], "ad_account_id": os.environ["META_AD_ACCOUNT_ID"]}
+            if os.environ.get("META_ACCESS_TOKEN") and os.environ.get("META_AD_ACCOUNT_ID") else None)
     if meta:
         meta_mcp = os.path.join(WORK, "meta-mcp")
         os.makedirs(meta_mcp, exist_ok=True)
@@ -188,7 +192,7 @@ def run_optional_pulls(anchor: str, sk: str) -> None:
         except Exception as e:  # noqa: BLE001
             print(f"pull meta-spend FAILED (Meta tail stays stale): {str(e).splitlines()[0]}")
     else:
-        print("no META_SECRET_ARN — Meta spend tail stays stale")
+        print("no META_ACCESS_TOKEN / META_AD_ACCOUNT_ID env — Meta spend tail stays stale")
 
 
 def run_pipeline(anchor: str) -> str:
