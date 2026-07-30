@@ -1,0 +1,51 @@
+# Known bad brand/portal terms — phrase-match negatives for Microsoft Ads
+#
+# One entry per line. Each entry is matched as a SUBSTRING of the search term
+# (case-insensitive). Blank lines and lines starting with # are ignored.
+#
+# These are deterministic, highest-confidence BAD flags — the classifier will
+# mark any term containing one of these as BAD regardless of vocab overlap.
+# David edits this file directly; no code change needed.
+#
+# Pattern: add the SHORT PHRASE (1-3 tokens) that identifies the brand/portal,
+# not the full search term. Example: add "boltrail", not "boltrail property portal".
+#
+# Confirmed bad brands/portals (from 2026-06-04 manual audit):
+boltrail
+leasekibo
+doorban
+glopy
+ownerville
+spirianshessal
+opstechonogly
+parkhub360
+trivetts
+iconnect
+netcore
+fundigo
+utilityapi
+bluesky property
+boxer tenant
+boxer property
+brickstone
+nomad rental
+mth management
+garden communities
+murry management
+pikus
+goeguest
+premiermanagementnc
+karecondo
+leasingdesk
+willow creek
+valueconnect
+titleflex
+spaerth
+ownerxt
+verdant resident
+rentberger
+5foe
+chattanooga apts
+confirmiconville
+stackhouse management
+lawson management

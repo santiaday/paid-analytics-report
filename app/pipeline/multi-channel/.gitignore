@@ -1,0 +1,20 @@
+# Keep Claude Desktop git/folder scan cheap (avoids CloudStorage BFS freeze)
+outputs/
+random/
+node_modules/
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+test-results/
+playwright-report/
+blob-report/
+dist/
+build/
+.next/
+.cache/
+.turbo/
+*.log
+.DS_Store
+.git/

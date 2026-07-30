@@ -1,0 +1,224 @@
+Search keyword report
+"May 31, 2026 - June 1, 2026"
+Keyword status,Keyword,Match type,Campaign,Ad group,Status,Status reasons,Currency code,Max. CPC,Impr.,Clicks,Avg. CPC,Cost,Demo Scheduled,Cost/Demo,Keyword ID,Campaign ID,Ad group ID
+Enabled,[property management software companies],Exact match,JF_Search_Exact_US_PMS,Companies,Eligible,,USD, --,9,0,0,0.00,0.00,0.00,297684288219,21320472126,173429864784
+Enabled,[landlord property management software],Exact match,Landlord,Landlord,Eligible,,USD, --,10,1,178.24,178.24,0.00,0.00,297684286299,13873742066,127909056227
+Enabled,[property performance analysis tools],Exact match,Tier 1,Commercial,Eligible,,USD, --,7,0,0,0.00,0.00,0.00,2278116164089,17563224167,139234074218
+Enabled,"""online rent collection software""",Phrase match,Tier 1,Rent Collection,Eligible,,USD, --,104,2,62.22,124.43,0.00,0.00,343564144986,17563224167,152771024397
+Enabled,[small rental property management software],Exact match,Generic,Small,Eligible,,USD, --,65,4,70.10,280.39,0.00,0.00,387178276221,22410529614,183341127491
+Enabled,[landlord management software],Exact match,Landlord,Landlord,Eligible,,USD, --,13,2,36.29,72.57,0.84,86.54,317631473,13873742066,127909056227
+Enabled,[hemlane pricing],Exact match,Competitors - Tier 1,Hemlane,Limited,low quality,USD, --,14,0,0,0.00,0.00,0.00,722558109255,22408307493,189989814458
+Enabled,"""quickbooks and rental properties""",Phrase match,Competitors - Tier 1,Quickbooks,Limited,low quality,USD, --,12,0,0,0.00,0.00,0.00,2176511994123,22408307493,172823269410
+Enabled,"""commercial property management software""",Phrase match,Tier 1,Commercial,Eligible,,USD, --,0,0,0,0.00,0.00,0.00,306114298005,17563224167,139234074218
+Enabled,[property rent collection software],Exact match,Tier 1,Rent Collection,Eligible,,USD, --,6,0,0,0.00,0.00,0.00,387178274141,17563224167,152771024397
+Enabled,[rental bookkeeping software],Exact match,Generic,Bookkeeping,Eligible,,USD, --,21,2,125.72,251.43,0.00,0.00,304739381701,22410529614,177168260585
+Enabled,[doorloop ai assistant],Exact match,Branded,DoorLoop AI,Eligible,,USD,4.40 (enhanced),0,0,0,0.00,0.00,0.00,2447445368612,15065860967,187284236778
+Enabled,"""software for rent collection""",Phrase match,Tier 1,Rent Collection,Eligible,,USD, --,34,0,0,0.00,0.00,0.00,1586898713198,17563224167,152771024397
+Enabled,[monthly rent payment solutions],Exact match,Tier 1,Rent Collection,Limited,low quality,USD, --,10,0,0,0.00,0.00,0.00,2262318573558,17563224167,152771024397
+Enabled,[rent collection software],Exact match,Tier 1,Rent Collection,Eligible,,USD, --,22,2,111.47,222.93,1.00,222.93,305037408478,17563224167,152771024397
+Enabled,[turbotenant property management],Exact match,Competitors - Tier 1,TurboTenant,Limited,low quality,USD, --,17,0,0,0.00,0.00,0.00,2283560573197,22408307493,189989814178
+Enabled,[appfolio],Exact match,Competitors - Tier 1,Appfolio,Limited,low quality,USD, --,"7,222",46,43.10,1982.79,1.00,"1,982.79",10848938740,22408307493,172823269330
+Enabled,[landlord rental software],Exact match,Landlord,Landlord,Eligible,,USD, --,10,1,27.37,27.37,0.00,0.00,1694369535,13873742066,127909056227
+Enabled,[rental software],Exact match,JF_Search_Exact_US_PMS,Rental,Eligible,,USD, --,121,6,51.43,308.56,0.00,0.00,27875786,21320472126,173429864304
+Enabled,[small commercial property management software],Exact match,Tier 1,Commercial,Eligible,,USD, --,4,1,32.67,32.67,0.00,0.00,354280480054,17563224167,139234074218
+Enabled,[rent portal for landlords],Exact match,Tier 1,Rent Collection,Eligible,,USD, --,74,5,97.44,487.18,0.00,0.00,1642625642058,17563224167,152771024397
+Enabled,[Yardi Voyager],Exact match,Competitors - Tier 1,Yardi Voyager,Eligible,,USD, --,137,3,56.96,170.89,0.00,0.00,330888262248,22408307493,189989814698
+Enabled,"""Propertyware""",Phrase match,Competitors - Tier 1,Propertyware,Eligible,,USD, --,92,4,22.08,88.31,0.00,0.00,372084701476,22408307493,172823269570
+Enabled,"""QuickBooks Property Management Software""",Phrase match,Competitors - Tier 1,Quickbooks,Eligible,,USD, --,23,0,0,0.00,0.00,0.00,2416340160412,22408307493,172823269410
+Enabled,[Simplifyem],Exact match,Competitors - Tier 1,Simplifyem,Eligible,,USD, --,116,4,21.11,84.43,0.00,0.00,957497673995,22408307493,172823269890
+Enabled,[landlord tenant software],Exact match,Landlord,Landlord,Eligible,,USD, --,9,0,0,0.00,0.00,0.00,300918184768,13873742066,127909056227
+Enabled,[turbotenant demo],Exact match,Competitors - Tier 1,TurboTenant,Limited,low quality,USD, --,2,0,0,0.00,0.00,0.00,660580963139,22408307493,189989814178
+Enabled,[turbotenant alternatives],Exact match,Competitors - Tier 1,TurboTenant,Limited,low quality,USD, --,10,1,16.03,16.03,0.00,0.00,762795584154,22408307493,189989814178
+Enabled,[Propertyware],Exact match,Competitors - Tier 1,Propertyware,Eligible,,USD, --,388,5,56.03,280.16,0.00,0.00,362112511584,22408307493,172823269570
+Enabled,[yardi],Exact match,Competitors - Tier 1,Yardi Breeze,Eligible,,USD, --,"1,673",36,18.00,647.87,0.00,0.00,1625353750,22408307493,172823270290
+Enabled,[property management CRM software],Exact match,Tier 1,CRM,Eligible,,USD, --,16,0,0,0.00,0.00,0.00,787838028695,17563224167,139234075618
+Enabled,[property management app],Exact match,JF_Search_Exact_US_PMS,App,Eligible,,USD, --,60,7,144.95,1014.68,0.00,0.00,21668451067,21320472126,173429863904
+Enabled,[Stessa],Exact match,Competitors - Tier 1,Stessa,Eligible,,USD, --,870,26,18.73,487.03,1.00,487.03,577862856444,22408307493,172823270050
+Enabled,[innago],Exact match,Competitors - Tier 1,Innago,Eligible,,USD, --,"1,818",29,21.43,621.51,0.00,0.00,367330619957,22408307493,189989813978
+Enabled,"""property management accounting quickbooks""",Phrase match,Competitors - Tier 1,Quickbooks,Eligible,,USD, --,0,0,0,0.00,0.00,0.00,799088998222,22408307493,172823269410
+Enabled,"""secure rent payment processing""",Phrase match,Tier 1,Rent Collection,Eligible,,USD, --,553,21,47.84,1004.70,0.00,0.00,2295459729764,17563224167,152771024397
+Enabled,[rental property management apps],Exact match,JF_Search_Exact_US_PMS,Rental,Eligible,,USD, --,139,6,267.25,1603.52,0.00,0.00,368979287182,21320472126,173429864304
+Enabled,[online rental payments for landlords],Exact match,Landlord,Landlord,Limited,low quality,USD, --,33,4,75.65,302.61,0.00,0.00,493777955670,13873742066,127909056227
+Enabled,[rentvine property management],Exact match,Competitors - Tier 1,Rentvine,Limited,low quality,USD, --,1,0,0,0.00,0.00,0.00,874349061765,22408307493,189989813938
+Enabled,[rent manager reviews],Exact match,Competitors - Tier 1,Rent Manager,Eligible,,USD, --,3,1,12.69,12.69,0.00,0.00,356285983096,22408307493,172823269650
+Enabled,[online commercial property management software],Exact match,Tier 1,Commercial,Eligible,,USD, --,4,0,0,0.00,0.00,0.00,305037399118,17563224167,139234074218
+Enabled,[how much does door loop cost],Exact match,Branded,DoorLoop Pricing,Limited,below first page bid,USD,6.00 (enhanced),0,0,0,0.00,0.00,0.00,2269301225185,15065860967,149576294399
+Enabled,"""RentRedi""",Phrase match,Competitors - Tier 1,Rentredi,Eligible,,USD, --,286,10,21.00,210.04,0.00,0.00,934818399506,22408307493,172823269850
+Enabled,[rent manager property management software],Exact match,Competitors - Tier 1,Rent Manager,Limited,low quality,USD, --,9,0,0,0.00,0.00,0.00,297684289419,22408307493,172823269650
+Enabled,"""quickbooks for property management""",Phrase match,Competitors - Tier 1,Quickbooks,Eligible,,USD, --,3,1,41.23,41.23,0.00,0.00,299799842349,22408307493,172823269410
+Enabled,[ai integration with property management software],Exact match,Tier 1,AI,Eligible,,USD, --,6,0,0,0.00,0.00,0.00,2462618097583,17563224167,194827525162
+Enabled,"""property management software with ai""",Phrase match,Tier 1,AI,Eligible,,USD, --,652,13,72.56,943.24,0.00,0.00,2455009137756,17563224167,194827525162
+Enabled,[property management software for enterprise portfolios],Exact match,Tier 1,Enterprise,Eligible,,USD, --,1,0,0,0.00,0.00,0.00,2447299311776,17563224167,194827525322
+Enabled,[rentec direct],Exact match,Competitors - Tier 1,Rentec Direct,Eligible,,USD, --,0,0,0,0.00,0.00,0.00,27850155820,22408307493,181868292207
+Enabled,[doorloop],Exact match,Branded,DoorLoop,Eligible,,USD,14.30 (enhanced),"3,023",894,12.18,10889.61,6.00,"1,814.93",430233179898,15065860967,129279059495
+Enabled,"""rentredi app""",Phrase match,Competitors - Tier 1,Rentredi,Eligible,,USD, --,181,4,13.85,55.39,0.00,0.00,1394349889867,22408307493,172823269850
+Enabled,[QuickBooks Property Management Software],Exact match,Competitors - Tier 1,Quickbooks,Eligible,,USD, --,10,1,215.43,215.43,0.00,0.00,1647933747265,22408307493,172823269410
+Enabled,"""property management software quickbooks integration""",Phrase match,Competitors - Tier 1,Quickbooks,Eligible,,USD, --,2,0,0,0.00,0.00,0.00,809520765740,22408307493,172823269410
+Enabled,[property management software with ai],Exact match,Tier 1,AI,Eligible,,USD, --,3,0,0,0.00,0.00,0.00,2462120749807,17563224167,194827525162
+Enabled,[rent collection app],Exact match,Tier 1,Rent Collection,Eligible,,USD, --,63,5,48.68,243.38,1.00,243.38,338702507458,17563224167,152771024397
+Enabled,[bookkeeping software for rental properties],Exact match,Generic,Bookkeeping,Limited,low quality,USD, --,0,0,0,0.00,0.00,0.00,649179434781,22410529614,177168260585
+Enabled,[property management software price comparison],Exact match,Generic,Property Management Software,Limited,low quality,USD, --,4,0,0,0.00,0.00,0.00,387178273421,22410529614,183341127331
+Enabled,"""doorloop ai""",Phrase match,Branded,DoorLoop AI,Eligible,,USD,27.50 (enhanced),2,0,0,0.00,0.00,0.00,2447445369012,15065860967,187284236778
+Enabled,[tenantcloud],Exact match,Competitors - Tier 1,Tenant Cloud,Limited,low quality,USD, --,"1,832",14,44.16,618.29,3.00,206.10,312215773190,22408307493,172823270090
+Enabled,"""small landlord software""",Phrase match,Landlord,Landlord,Eligible,,USD, --,66,5,34.87,174.36,0.00,0.00,304082783918,13873742066,127909056227
+Enabled,[commercial property operations software],Exact match,Tier 1,Commercial,Eligible,,USD, --,0,0,0,0.00,0.00,0.00,2278116163649,17563224167,139234074218
+Enabled,[online tools for property management],Exact match,Tier 1,Online,Eligible,,USD, --,48,1,87.85,87.85,0.00,0.00,2258499050780,17563224167,139234074138
+Enabled,[how much does rentredi cost],Exact match,Competitors - Tier 1,Rentredi,Limited,low quality,USD, --,0,0,0,0.00,0.00,0.00,2010190609417,22408307493,172823269850
+Enabled,[rentec cost],Exact match,Competitors - Tier 1,Rentec Direct,Not eligible,rarely served; low quality,USD, --,0,0,0,0.00,0.00,0.00,2273067624907,22408307493,181868292207
+Enabled,[innago alternatives],Exact match,Competitors - Tier 1,Innago,Eligible,,USD, --,3,0,0,0.00,0.00,0.00,2447348294158,22408307493,189989813978
+Enabled,"""stessa review""",Phrase match,Competitors - Tier 1,Stessa,Eligible,,USD, --,72,4,18.33,73.31,0.00,0.00,1365887999897,22408307493,172823270050
+Enabled,[rentec reviews],Exact match,Competitors - Tier 1,Rentec Direct,Limited,low quality,USD, --,0,0,0,0.00,0.00,0.00,943741972958,22408307493,181868292207
+Enabled,[rentec],Exact match,Competitors - Tier 1,Rentec Direct,Limited,low quality,USD, --,164,0,0,0.00,0.00,0.00,2833944321,22408307493,181868292207
+Enabled,[STRATAFOLIO],Exact match,Competitors - Tier 2,STRATAFOLIO,Eligible,,USD, --,23,3,32.47,97.40,0.00,0.00,1642500856033,16920840679,134051022445
+Enabled,"""STRATAFOLIO""",Phrase match,Competitors - Tier 2,STRATAFOLIO,Eligible,,USD, --,0,0,0,0.00,0.00,0.00,1642500855753,16920840679,134051022445
+Enabled,"""bookkeeping software for rental property""",Phrase match,Generic,Bookkeeping,Eligible,,USD, --,51,3,92.79,278.36,0.00,0.00,299713919960,22410529614,177168260585
+Enabled,[turbotenant],Exact match,Competitors - Tier 1,TurboTenant,Limited,low quality,USD, --,"8,676",101,23.35,2358.46,0.00,0.00,174358185151,22408307493,189989814178
+Enabled,[rental property management platform],Exact match,JF_Search_Exact_US_PMS,Rental,Eligible,,USD, --,12,1,47.26,47.26,0.00,0.00,308145377172,21320472126,173429864304
+Enabled,[real estate management software],Exact match,JF_Search_Exact_US_PMS,Real Estate,Eligible,,USD, --,28,0,0,0.00,0.00,0.00,34806251,21320472126,173429865064
+Enabled,"""property management rent collection""",Phrase match,Tier 1,Rent Collection,Limited,low quality,USD, --,61,0,0,0.00,0.00,0.00,299713930240,17563224167,152771024397
+Enabled,[ResMan],Exact match,Competitors - Tier 2,ResMan,Eligible,,USD, --,79,1,16.04,16.04,0.00,0.00,173547196388,16920840679,134051021005
+Enabled,"""best commercial property management software""",Phrase match,Tier 1,Commercial,Eligible,,USD, --,6,1,217.75,217.75,0.00,0.00,14256216048,17563224167,139234074218
+Enabled,"""receive rent payments online""",Phrase match,Tier 1,Rent Collection,Limited,low quality,USD, --,73,6,65.50,392.97,0.00,0.00,42019773583,17563224167,152771024397
+Enabled,[simplifyem pricing],Exact match,Competitors - Tier 1,Simplifyem,Eligible,,USD, --,0,0,0,0.00,0.00,0.00,722558109735,22408307493,172823269890
+Enabled,[rentvine alternatives],Exact match,Competitors - Tier 1,Rentvine,Eligible,,USD, --,0,0,0,0.00,0.00,0.00,2382361409898,22408307493,189989813938
+Enabled,[yardi voyager alternatives],Exact match,Competitors - Tier 1,Yardi Voyager,Limited,low quality,USD, --,26,3,119.48,358.43,0.00,0.00,2337570455899,22408307493,189989814698
+Enabled,[Knock CRM],Exact match,Competitors - Tier 2,Knock CRM,Eligible,,USD, --,6,0,0,0.00,0.00,0.00,1642845721425,16920840679,134051020245
+Enabled,[online rent payment],Exact match,Tier 1,Rent Collection,Eligible,,USD, --,174,9,26.89,242.00,0.00,0.00,515979375,17563224167,152771024397
+Enabled,[property management software for landlords],Exact match,Landlord,Landlord,Eligible,,USD, --,34,2,41.65,83.30,0.00,0.00,15585052562,13873742066,127909056227
+Enabled,"""quickbooks for rental property""",Phrase match,Competitors - Tier 1,Quickbooks,Eligible,,USD, --,78,3,25.47,76.41,0.00,0.00,300133679704,22408307493,172823269410
+Enabled,[best property management software],Exact match,Generic,Property Management Software,Eligible,,USD, --,183,12,51.65,619.77,0.00,0.00,1790744989,22410529614,183341127331
+Enabled,"""Door Loop""",Phrase match,Branded,Door Loop,Eligible,,USD,7.21 (enhanced),45,11,6.90,75.85,0.00,0.00,1454617976082,15065860967,134573082171
+Enabled,[self manage rental property],Exact match,JF_Search_Exact_US_PMS,Rental,Limited,low quality,USD, --,30,2,46.98,93.96,0.00,0.00,73047106401,21320472126,173429864304
+Enabled,"""commercial real estate property management software""",Phrase match,Tier 1,Commercial,Eligible,,USD, --,0,0,0,0.00,0.00,0.00,306114298285,17563224167,139234074218
+Enabled,"""commercial property management accounting software""",Phrase match,Tier 1,Commercial,Eligible,,USD, --,1,0,0,0.00,0.00,0.00,492572581632,17563224167,139234074218
+Enabled,[landlord studio],Exact match,Competitors - Tier 1,Landlord Studio,Eligible,,USD, --,198,5,12.10,60.52,0.00,0.00,346474192019,22408307493,189989814618
+Enabled,[property management software for small companies],Exact match,JF_Search_Exact_US_PMS,Companies,Eligible,,USD, --,22,0,0,0.00,0.00,0.00,330699159003,21320472126,173429864784
+Enabled,[residential rental property management software],Exact match,Tier 1,Residential,Eligible,,USD, --,27,3,110.83,332.49,0.00,0.00,16889967695,17563224167,139234073498
+Enabled,[best landlord software],Exact match,Landlord,Landlord,Limited,low quality,USD, --,100,7,74.83,523.79,0.00,0.00,7233829961,13873742066,127909056227
+Enabled,[doorloop property management],Exact match,Branded,DoorLoop,Eligible,,USD,6.00 (enhanced),8,3,5.94,17.83,0.00,0.00,1409514622931,15065860967,129279059495
+Enabled,[rental property management software programs],Exact match,JF_Search_Exact_US_PMS,Rental,Eligible,,USD, --,39,1,37.70,37.70,0.00,0.00,15406739476,21320472126,173429864304
+Enabled,"""commercial property management system""",Phrase match,Tier 1,Commercial,Eligible,,USD, --,22,2,103.66,207.31,0.00,0.00,628685275386,17563224167,139234074218
+Enabled,[RentRedi],Exact match,Competitors - Tier 1,Rentredi,Eligible,,USD, --,"2,264",57,20.43,1164.57,0.00,0.00,928628857115,22408307493,172823269850
+Enabled,[entrata],Exact match,Competitors - Tier 1,Entrata,Eligible,,USD, --,394,8,13.61,108.89,0.00,0.00,164975638,22408307493,175015193461
+Enabled,[Managecasa],Exact match,Competitors - Tier 2,ManageCasa,Limited,low quality,USD, --,1,0,0,0.00,0.00,0.00,1642845721625,16920840679,134051020765
+Enabled,[doorloop demo],Exact match,Branded,DoorLoop,Eligible,,USD,5.50 (enhanced),4,1,5.40,5.40,0.00,0.00,1843580925255,15065860967,129279059495
+Enabled,[yardi breeze alternatives],Exact match,Competitors - Tier 1,Yardi Breeze,Eligible,,USD, --,1,0,0,0.00,0.00,0.00,2335266931366,22408307493,172823270290
+Enabled,"""property management software buildium""",Phrase match,Competitors - Tier 1,Buildium,Eligible,,USD, --,2,0,0,0.00,0.00,0.00,343455005265,22408307493,172823269370
+Enabled,"""accounting software for landlords""",Phrase match,Generic,Accounting,Eligible,,USD, --,5,0,0,0.00,0.00,0.00,13869223535,22410529614,183341127971
+Enabled,[income and expense tracking for landlords],Exact match,Generic,Accounting,Eligible,,USD, --,28,2,69.95,139.90,0.00,0.00,2259374040683,22410529614,183341127971
+Enabled,"""rent software for landlords""",Phrase match,Landlord,Landlord,Eligible,,USD, --,566,30,61.16,1834.70,0.00,0.00,1256136691852,13873742066,127909056227
+Enabled,[Rent Manager],Exact match,Competitors - Tier 1,Rent Manager,Eligible,,USD, --,"1,119",16,45.05,720.79,0.00,0.00,362112511824,22408307493,172823269650
+Enabled,[Tenant File property management software],Exact match,Competitors - Tier 1,Tenant File,Limited,low quality,USD, --,3,0,0,0.00,0.00,0.00,2335522089286,22408307493,172823270330
+Enabled,[quickbooks for property rentals],Exact match,Competitors - Tier 1,Quickbooks,Eligible,,USD, --,50,3,23.25,69.74,0.00,0.00,706181158028,22408307493,172823269410
+Enabled,[how much is door loop],Exact match,Branded,DoorLoop Pricing,Eligible,,USD,10.00 (enhanced),24,3,9.48,28.43,0.00,0.00,2262426759820,15065860967,149576294399
+Enabled,[real estate bookkeeping software],Exact match,Generic,Bookkeeping,Limited,low quality,USD, --,5,0,0,0.00,0.00,0.00,2125211145,22410529614,177168260585
+Enabled,[best property management software for small landlords],Exact match,Generic,Small,Eligible,,USD, --,67,8,42.90,343.17,0.00,0.00,384638268925,22410529614,183341127491
+Enabled,[property management software],Exact match,Generic,Property Management Software,Eligible,,USD, --,368,25,176.49,4412.18,0.00,0.00,11713761,22410529614,183341127331
+Enabled,"""commercial property operations software""",Phrase match,Tier 1,Commercial,Eligible,,USD, --,0,0,0,0.00,0.00,0.00,655988321279,17563224167,139234074218
+Enabled,[rent manager software],Exact match,Competitors - Tier 1,Rent Manager,Eligible,,USD, --,23,1,19.41,19.41,0.00,0.00,2795753912,22408307493,172823269650
+Enabled,"""DoorLoop""",Phrase match,Branded,DoorLoop,Eligible,,USD,8.07 (enhanced),171,29,7.60,220.45,0.00,0.00,1455074377110,15065860967,129279059495
+Enabled,[Re-Leased property management software],Exact match,Competitors - Tier 1,Re-Leased,Limited,low quality,USD, --,5,0,0,0.00,0.00,0.00,2335522084926,22408307493,172823269610
+Enabled,[rentecdirect],Exact match,Competitors - Tier 1,Rentec Direct,Eligible,,USD, --,1,0,0,0.00,0.00,0.00,320805672231,22408307493,181868292207
+Enabled,"""AppFolio""",Phrase match,Competitors - Tier 1,Appfolio,Limited,low quality,USD, --,833,10,40.22,402.18,0.00,0.00,484530565166,22408307493,172823269330
+Enabled,"""how much is buildium per month""",Phrase match,Competitors - Tier 1,Buildium,Limited,low quality,USD, --,91,6,52.68,316.06,0.00,0.00,1511825611826,22408307493,172823269370
+Enabled,[buildium alternative],Exact match,Competitors - Tier 1,Buildium,Limited,low quality,USD, --,4,0,0,0.00,0.00,0.00,738011433987,22408307493,172823269370
+Enabled,[commercial property management software],Exact match,Tier 1,Commercial,Eligible,,USD, --,25,2,120.87,241.73,0.00,0.00,285053626,17563224167,139234074218
+Enabled,[property management crm],Exact match,Tier 1,CRM,Eligible,,USD, --,48,1,17.58,17.58,0.00,0.00,295683672186,17563224167,139234075618
+Enabled,[tenant management software],Exact match,Generic,Tenant Management,Limited,low quality,USD, --,83,6,92.51,555.05,0.00,0.00,828420231,22410529614,191103712507
+Enabled,[Door Loop Pricing],Exact match,Branded,DoorLoop Pricing,Eligible,,USD,4.29 (enhanced),6,3,3.18,9.55,0.00,0.00,2089997165480,15065860967,149576294399
+Enabled,[is doorloop safe],Exact match,Branded,DoorLoop Safety,Eligible,,USD,5.00 (enhanced),0,0,0,0.00,0.00,0.00,2363302425287,15065860967,197167460042
+Enabled,[doorloop alternatives],Exact match,Branded,DoorLoop Alternatives,Limited,below first page bid,USD,20.00 (enhanced),2,0,0,0.00,0.00,0.00,1721304089503,15065860967,195953655786
+Enabled,"""ResMan""",Phrase match,Competitors - Tier 2,ResMan,Eligible,,USD, --,9,0,0,0.00,0.00,0.00,530239482627,16920840679,134051021005
+Enabled,"""rentec""",Phrase match,Competitors - Tier 1,Rentec Direct,Limited,low quality,USD, --,16,0,0,0.00,0.00,0.00,2979936097,22408307493,181868292207
+Enabled,[hemlane reviews],Exact match,Competitors - Tier 1,Hemlane,Limited,low quality,USD, --,23,0,0,0.00,0.00,0.00,838124546632,22408307493,189989814458
+Enabled,[buildium],Exact match,Competitors - Tier 1,Buildium,Limited,low quality,USD, --,"3,743",28,45.81,1282.59,1.00,"1,282.59",10848917680,22408307493,172823269370
+Enabled,"""rent collection software""",Phrase match,Tier 1,Rent Collection,Eligible,,USD, --,211,7,40.99,286.93,0.00,0.00,299713932200,17563224167,152771024397
+Enabled,[small landlord property management software],Exact match,Generic,Small,Eligible,,USD, --,31,3,101.19,303.57,0.00,0.00,297684294219,22410529614,183341127491
+Enabled,"""property management software""",Phrase match,Generic,Property Management Software,Eligible,,USD, --,"1,437",39,66.79,2604.77,1.00,"2,604.77",10321561,22410529614,183341127331
+Enabled,[door loop reviews],Exact match,Branded,DoorLoop Reviews,Eligible,,USD,10.00 (enhanced),10,2,6.84,13.68,0.00,0.00,1655455058155,15065860967,151907170722
+Enabled,[doorloop security],Exact match,Branded,DoorLoop Safety,Eligible,,USD,5.00 (enhanced),107,36,2.33,83.82,0.00,0.00,2276421249733,15065860967,197167460042
+Enabled,[best software for managing rental properties],Exact match,JF_Search_Exact_US_PMS,Rental,Eligible,,USD, --,63,5,126.34,631.69,1.00,631.69,930137131109,21320472126,173429864304
+Enabled,[how much does rentec cost],Exact match,Competitors - Tier 1,Rentec Direct,Eligible,,USD, --,0,0,0,0.00,0.00,0.00,2273067623507,22408307493,181868292207
+Enabled,[landlord studio property management],Exact match,Competitors - Tier 1,Landlord Studio,Limited,low quality,USD, --,0,0,0,0.00,0.00,0.00,870907979742,22408307493,189989814618
+Enabled,[quickbooks for property management],Exact match,Competitors - Tier 1,Quickbooks,Eligible,,USD, --,10,0,0,0.00,0.00,0.00,362385251197,22408307493,172823269410
+Enabled,[online rental property management software],Exact match,JF_Search_Exact_US_PMS,Rental,Limited,low quality,USD, --,33,1,102.76,102.76,0.00,0.00,297684287459,21320472126,173429864304
+Enabled,[appfolio property management software],Exact match,Competitors - Tier 1,Appfolio,Eligible,,USD, --,5,0,0,0.00,0.00,0.00,16889970485,22408307493,172823269330
+Enabled,[innago competitors],Exact match,Competitors - Tier 1,Innago,Eligible,,USD, --,7,0,0,0.00,0.00,0.00,2452385332065,22408307493,189989813978
+Enabled,"""entrata pricing""",Phrase match,Competitors - Tier 1,Entrata,Limited,low quality,USD, --,0,0,0,0.00,0.00,0.00,375721636736,22408307493,175015193461
+Enabled,[commercial real estate portfolio management software],Exact match,Tier 1,Commercial,Eligible,,USD, --,0,0,0,0.00,0.00,0.00,853466259538,17563224167,139234074218
+Enabled,"""property management software for commercial buildings""",Phrase match,Tier 1,Commercial,Eligible,,USD, --,0,0,0,0.00,0.00,0.00,2338890934452,17563224167,139234074218
+Enabled,"""PropertyBoss""",Phrase match,Competitors - Tier 2,PropertyBoss,Limited,low quality,USD, --,0,0,0,0.00,0.00,0.00,934818399106,16920840679,134051020685
+Enabled,[top 5 property management software],Exact match,Generic,Property Management Software,Limited,low quality,USD, --,2,0,0,0.00,0.00,0.00,147345286810,22410529614,183341127331
+Enabled,[DoorLoop Reviews],Exact match,Branded,DoorLoop Reviews,Eligible,,USD,7.70 (enhanced),2,0,0,0.00,0.00,0.00,2281650694992,15065860967,151907170722
+Enabled,[rental property management program],Exact match,JF_Search_Exact_US_PMS,Rental,Eligible,,USD, --,23,0,0,0.00,0.00,0.00,344579124231,21320472126,173429864304
+Enabled,"""commercial property portfolio software""",Phrase match,Tier 1,Commercial,Eligible,,USD, --,0,0,0,0.00,0.00,0.00,529488527449,17563224167,139234074218
+Enabled,[online rental property software],Exact match,Tier 1,Online,Limited,low quality,USD, --,4,1,57.59,57.59,0.00,0.00,5320057373,17563224167,139234074138
+Enabled,[top rent collection software],Exact match,Tier 1,Rent Collection,Limited,low quality,USD, --,41,4,54.60,218.40,0.00,0.00,663073456057,17563224167,152771024397
+Enabled,[property management accounting quickbooks],Exact match,Competitors - Tier 1,Quickbooks,Eligible,,USD, --,0,0,0,0.00,0.00,0.00,632784251685,22408307493,172823269410
+Enabled,"""collect rent online""",Phrase match,Tier 1,Rent Collection,Limited,low quality,USD, --,103,8,80.74,645.93,0.00,0.00,866808760,17563224167,152771024397
+Enabled,"""rentec direct""",Phrase match,Competitors - Tier 1,Rentec Direct,Eligible,,USD, --,0,0,0,0.00,0.00,0.00,27850207780,22408307493,181868292207
+Enabled,[landlord studio demo],Exact match,Competitors - Tier 1,Landlord Studio,Eligible,,USD, --,0,0,0,0.00,0.00,0.00,850494790795,22408307493,189989814618
+Enabled,[innago demo],Exact match,Competitors - Tier 1,Innago,Eligible,,USD, --,0,0,0,0.00,0.00,0.00,995286010239,22408307493,189989813978
+Enabled,"""income and expense tracking for landlords""",Phrase match,Generic,Accounting,Eligible,,USD, --,102,3,13.46,40.38,1.00,40.38,2295459728604,22410529614,183341127971
+Enabled,[rentvine competitors],Exact match,Competitors - Tier 1,Rentvine,Eligible,,USD, --,0,0,0,0.00,0.00,0.00,2372228387268,22408307493,189989813938
+Enabled,[rentvine],Exact match,Competitors - Tier 1,Rentvine,Eligible,,USD, --,"1,757",8,18.36,146.87,0.00,0.00,874349061325,22408307493,189989813938
+Enabled,[landlord studio competitors],Exact match,Competitors - Tier 1,Landlord Studio,Limited,low quality,USD, --,1,0,0,0.00,0.00,0.00,870592125820,22408307493,189989814618
+Enabled,"""hemlane""",Phrase match,Competitors - Tier 1,Hemlane,Limited,low quality,USD, --,86,1,204.19,204.19,0.00,0.00,454061868644,22408307493,189989814458
+Enabled,[appfolio demo],Exact match,Competitors - Tier 1,Appfolio,Eligible,,USD, --,7,0,0,0.00,0.00,0.00,298302634048,22408307493,172823269330
+Enabled,[doorloop com],Exact match,Branded,DoorLoop,Eligible,,USD,11.00 (enhanced),6,3,10.79,32.38,0.00,0.00,1987974331352,15065860967,129279059495
+Enabled,[doorloop ai],Exact match,Branded,DoorLoop AI,Eligible,,USD,4.40 (enhanced),0,0,0,0.00,0.00,0.00,2444277166524,15065860967,187284236778
+Enabled,"""online commercial property management software""",Phrase match,Tier 1,Commercial,Eligible,,USD, --,64,1,16.08,16.08,0.00,0.00,355012382816,17563224167,139234074218
+Enabled,"""property management software integrates with quickbooks""",Phrase match,Competitors - Tier 1,Quickbooks,Eligible,,USD, --,3,0,0,0.00,0.00,0.00,809520765500,22408307493,172823269410
+Enabled,[property management software sync with quickbooks],Exact match,Competitors - Tier 1,Quickbooks,Eligible,,USD, --,0,0,0,0.00,0.00,0.00,1499477795201,22408307493,172823269410
+Enabled,[buildium vs doorloop],Exact match,Competitors - Tier 1,Buildium,Eligible,,USD, --,18,0,0,0.00,0.00,0.00,1643266712863,22408307493,172823269370
+Enabled,[accounting tools for property managers],Exact match,Generic,Accounting,Eligible,,USD, --,57,9,59.79,538.08,0.00,0.00,2259374040443,22410529614,183341127971
+Enabled,"""commercial property management software for landlords""",Phrase match,Tier 1,Commercial,Eligible,,USD, --,2,0,0,0.00,0.00,0.00,1562110832783,17563224167,139234074218
+Enabled,[PropertyBoss],Exact match,Competitors - Tier 2,PropertyBoss,Limited,low quality,USD, --,5,0,0,0.00,0.00,0.00,1006115586446,16920840679,134051020685
+Enabled,[door loop],Exact match,Branded,Door Loop,Eligible,,USD,5.60 (enhanced),434,117,5.25,614.47,3.93,156.21,300762602132,15065860967,134573082171
+Enabled,"""automatic rent collection""",Phrase match,Tier 1,Rent Collection,Eligible,,USD, --,129,4,59.84,239.36,0.00,0.00,322966954945,17563224167,152771024397
+Enabled,"""automated rent payment solutions""",Phrase match,Tier 1,Rent Collection,Eligible,,USD, --,72,3,58.86,176.59,1.00,176.59,2336070463423,17563224167,152771024397
+Enabled,[Yardi Breeze],Exact match,Competitors - Tier 1,Yardi Breeze,Eligible,,USD, --,184,11,40.68,447.43,0.00,0.00,816480389739,22408307493,172823270290
+Enabled,[stessa pay rent],Exact match,Competitors - Tier 1,Stessa,Eligible,,USD, --,116,1,14.59,14.59,0.00,0.00,2336774007577,22408307493,172823270050
+Enabled,"""commercial real estate portfolio management software""",Phrase match,Tier 1,Commercial,Eligible,,USD, --,48,0,0,0.00,0.00,0.00,984531645327,17563224167,139234074218
+Enabled,[enterprise portfolio management software],Exact match,Tier 1,Enterprise,Eligible,,USD, --,4,0,0,0.00,0.00,0.00,3667327832,17563224167,194827525322
+Enabled,[yardi breeze tutorial],Exact match,Competitors - Tier 1,Yardi Breeze,Eligible,,USD, --,0,0,0,0.00,0.00,0.00,630989515380,22408307493,172823270290
+Enabled,[appfolio vs doorloop],Exact match,Competitors - Tier 1,Appfolio,Eligible,,USD, --,8,0,0,0.00,0.00,0.00,2078732989094,22408307493,172823269330
+Enabled,[property management software integrates with quickbooks],Exact match,Competitors - Tier 1,Quickbooks,Eligible,,USD, --,2,0,0,0.00,0.00,0.00,420174014861,22408307493,172823269410
+Enabled,[buildium property management software],Exact match,Competitors - Tier 1,Buildium,Eligible,,USD, --,19,1,126.58,126.58,0.00,0.00,10848917500,22408307493,172823269370
+Enabled,[rental management software],Exact match,JF_Search_Exact_US_PMS,Rental,Limited,low quality,USD, --,51,2,64.38,128.75,0.00,0.00,13427862,21320472126,173429864304
+Enabled,[real estate property management software],Exact match,JF_Search_Exact_US_PMS,Real Estate,Eligible,,USD, --,104,7,221.91,1553.39,2.00,776.69,116723795,21320472126,173429865064
+Enabled,[DoorLoop Review],Exact match,Branded,DoorLoop Reviews,Eligible,,USD,11.00 (enhanced),3,0,0,0.00,0.00,0.00,2089207810930,15065860967,151907170722
+Enabled,[DoorLoop Pricing],Exact match,Branded,DoorLoop Pricing,Eligible,,USD,8.25 (enhanced),22,15,6.20,93.01,0.00,0.00,2154270623477,15065860967,149576294399
+Enabled,[hemlane],Exact match,Competitors - Tier 1,Hemlane,Limited,low quality,USD, --,695,3,17.53,52.58,0.00,0.00,454061869804,22408307493,189989814458
+Enabled,[appfolio alternatives],Exact match,Competitors - Tier 1,Appfolio,Eligible,,USD, --,17,1,33.50,33.50,0.00,0.00,463137499339,22408307493,172823269330
+Enabled,"""Buildium""",Phrase match,Competitors - Tier 1,Buildium,Limited,low quality,USD, --,0,0,0,0.00,0.00,0.00,298578033547,22408307493,172823269370
+Enabled,[doorloop competitors],Exact match,Branded,DoorLoop Alternatives,Eligible,,USD,20.00 (enhanced),4,0,0,0.00,0.00,0.00,1906291929483,15065860967,195953655786
+Enabled,[rentvine pricing],Exact match,Competitors - Tier 1,Rentvine,Eligible,,USD, --,9,0,0,0.00,0.00,0.00,874349061725,22408307493,189989813938
+Enabled,"""buildium""",Phrase match,Competitors - Tier 1,Buildium,Limited,low quality,USD, --,394,2,65.29,130.58,0.00,0.00,299848824928,22408307493,172823269370
+Enabled,"""online rental management software""",Phrase match,Tier 1,Online,Eligible,,USD, --,"1,227",26,78.11,2030.94,0.00,0.00,12893950238,17563224167,139234074138
+Enabled,[collect rent from tenants online],Exact match,Tier 1,Rent Collection,Eligible,,USD, --,59,2,73.71,147.43,0.00,0.00,325191833428,17563224167,152771024397
+Enabled,[rentvine reviews],Exact match,Competitors - Tier 1,Rentvine,Eligible,,USD, --,7,1,14.90,14.90,0.00,0.00,874349061805,22408307493,189989813938
+Enabled,[RentManager],Exact match,Competitors - Tier 1,Rent Manager,Eligible,,USD, --,6,1,72.74,72.74,0.00,0.00,1442607370748,22408307493,172823269650
+Enabled,[innago pricing],Exact match,Competitors - Tier 1,Innago,Eligible,,USD, --,35,2,9.21,18.42,0.00,0.00,895785934759,22408307493,189989813978
+Enabled,[innago property management],Exact match,Competitors - Tier 1,Innago,Limited,low quality,USD, --,36,0,0,0.00,0.00,0.00,820877286644,22408307493,189989813978
+Enabled,"""commercial tenant software""",Phrase match,Tier 1,Commercial,Limited,low quality,USD, --,25,3,96.41,289.24,0.00,0.00,524528101159,17563224167,139234074218
+Enabled,[online rental management software],Exact match,Tier 1,Online,Eligible,,USD, --,79,9,160.84,1447.52,1.00,"1,447.52",12721194683,17563224167,139234074138
+Enabled,[property management software with ai features],Exact match,Tier 1,AI,Eligible,,USD, --,128,15,91.42,1371.30,0.00,0.00,2467381149503,17563224167,194827525162
+Enabled,"""Managecasa""",Phrase match,Competitors - Tier 2,ManageCasa,Limited,low quality,USD, --,0,0,0,0.00,0.00,0.00,1642845721185,16920840679,134051020765
+Enabled,[rentvine demo],Exact match,Competitors - Tier 1,Rentvine,Eligible,,USD, --,0,0,0,0.00,0.00,0.00,943741973038,22408307493,189989813938
+Enabled,[landlord studio pricing],Exact match,Competitors - Tier 1,Landlord Studio,Eligible,,USD, --,2,0,0,0.00,0.00,0.00,870592125980,22408307493,189989814618
+Enabled,[innago reviews],Exact match,Competitors - Tier 1,Innago,Eligible,,USD, --,44,6,35.95,215.71,0.00,0.00,768815948396,22408307493,189989813978
+Enabled,"""Entrata""",Phrase match,Competitors - Tier 1,Entrata,Eligible,,USD, --,1,0,0,0.00,0.00,0.00,314549417426,22408307493,175015193461
+ --,,Total: Enabled keywords, --, --, --,,USD, --,"48,299","1,952",29.22,57031.27,25.77,"2,212.90", --, --, --
+,,Total: Keywords in your account,,,,,USD,,"48,445","1,955",29.27,57213.41,25.77,"2,219.97",,,
+,,Total: Your keywords,,,,,USD,,"48,445","1,955",29.27,57213.41,25.77,"2,219.97",,,
+,,Total: AI Max expanded matches,,,,,USD,,0,0,0,0.00,0.00,0.00,,,
+,,Total: AI Max landing page matches,,,,,USD,,0,0,0,0.00,0.00,0.00,,,
+,,Total: URL inclusions in your account,,,,,USD,,0,0,0,0.00,0.00,0.00,,,
+,,Total: Account,,,,,USD,,"61,563","2,039",28.22,57548.66,25.77,"2,232.97",,,
+,,Total: Search,,,,,USD,,"48,445","1,955",29.27,57213.41,25.77,"2,219.97",,,
+,,Total: Demand Gen,,,,,USD,,"13,118",84,3.99,335.24,0.00,0.00,,,
+,,Total: Video,,,,,USD,,0,0,0,0.00,0.00,0.00,,,
+,,Total: Display,,,,,USD,,0,0,0,0.00,0.00,0.00,,,
+,,Total: Performance Max,,,,,USD,,0,0,0,0.00,0.00,0.00,,,
+,,Total: Smart,,,,,USD,,0,0,0,0.00,0.00,0.00,,,
